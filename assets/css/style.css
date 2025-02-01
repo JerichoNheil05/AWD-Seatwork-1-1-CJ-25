@@ -1,0 +1,386 @@
+
+body {
+
+    color: white;
+  }
+  
+  .headingBank {
+  padding-top: 0.5rem;
+  width: 100%;
+  }
+  
+  .navBank {
+  display: flex;
+  justify-content: space-between; /* Space between the heading and links */
+  align-items: center;
+  }
+  
+  .ubank {
+  padding-left: 1rem;
+  color: rgb(26, 157, 8);
+  font-family: 'Poppins', sans-serif; /* Optional: Set a font */
+  font-weight: 600; /* Semi-bold */
+  margin: 0; /* Remove default margin */
+  }
+  
+  .withdrawBtn {
+  padding-right: 1rem;
+  
+  }
+  
+  
+  
+  .aBank a {
+  margin-bottom: 0.5rem;
+  text-decoration: none; /* Remove text decoration */
+  color: rgb(223, 232, 222); /* Set link color to black */
+  font-family: 'Poppins', sans-serif; /* Optional: Set a font */
+  font-weight: 400; /* Normal weight */
+  }
+  
+  .accountBtn {
+  margin-right: 2rem;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(26, 157, 8);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: background-color 0.3s;
+  }
+  
+  .accountBtn:hover {
+  color: white;
+  background-color: rgb(26, 157, 8);
+  }
+  
+  .withdrawBtn {
+  margin-right: 1rem;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(26, 157, 8);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: background-color 0.3s;
+  
+  }
+  
+  .withdrawBtn:hover {
+  color: white;
+  background-color: rgb(26, 157, 8);
+  }
+  
+  
+  /* css for img */
+  .imgBank img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  
+  /* css for content*/
+  
+  .contentBank {
+  
+    color: #ffffff;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    z-index: 1; /* Ensure the text is in front of the image */
+  }
+  
+  .contentBank h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600; /* Semi-bold */
+    text-align: left;
+    color: #000000c2;
+  }
+  
+  .contentBank h3 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    color: black;
+  }
+  
+  .contentBank p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    color: #000200;
+    padding-bottom: 3rem;
+  
+  }
+  
+  .btnBank a {
+    text-decoration: none;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: flex-start; /* Align buttons to the left */
+  }
+  
+  
+  
+  
+  /* css for btn */
+  
+  .btnDeposit {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: rgb(9, 177, 53);
+    --btn-bg-2: rgb(130, 237, 17);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    margin-right: 1rem;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-weight: 900;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(
+      325deg,
+      var(--btn-bg-2) 0%,
+      var(--btn-bg-1) 55%,
+      var(--btn-bg-2) 90%
+    );
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow:
+      0px 0px 20px rgba(33, 238, 2, 0.873),
+      0px 5px 5px -1px rgba(21, 93, 1, 0.751),
+      inset 4px 4px 8px rgba(155, 255, 4, 0.897),
+      inset -4px -4px 8px rgba(66, 169, 50, 0.989);
+  }
+  
+  .btnDeposit:hover {
+    background-position: right top;
+  }
+  
+  .btnDeposit:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow:
+      0 0 0 3px var(--btn-bg-color),
+      0 0 0 6px var(--btn-bg-2);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .btnDeposit {
+      transition: linear;
+    }
+  }
+  
+  
+  .btnWithdraw {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: rgb(9, 177, 53);
+    --btn-bg-2: rgb(206, 246, 7);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-weight: 900;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(
+      325deg,
+      var(--btn-bg-2) 0%,
+      var(--btn-bg-1) 55%,
+      var(--btn-bg-2) 90%
+    );
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow:
+      0px 0px 20px rgba(33, 238, 2, 0.873),
+      0px 5px 5px -1px rgba(21, 93, 1, 0.751),
+      inset 4px 4px 8px rgba(155, 255, 4, 0.897),
+      inset -4px -4px 8px rgba(66, 169, 50, 0.989);
+  }
+  
+  .btnWithdraw:hover {
+    background-position: right top;
+  }
+  
+  .btnWithdraw :is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow:
+      0 0 0 3px var(--btn-bg-color),
+      0 0 0 6px var(--btn-bg-2);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .btnDeposit {
+      transition: linear;
+    }
+  }
+  /* css for img*/
+  .imgDeposit img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+  }
+  
+  /* css for transaction form */
+  
+  .depositBank {
+  justify-content: center;
+  color: black;
+  padding-top: 1rem;
+  padding-left: 4rem;
+  }
+  
+  .depositcard {
+  overflow: hidden;
+  z-index: 1;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translate(-50%, 120%);
+  margin-top: 6rem;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+  background-color: #ffffff;
+  color: #333;
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  }
+  
+  .card-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  }
+  
+  .card-body {
+  padding: 20px;
+  padding-bottom: 0;
+  }
+  
+  form {
+  display: flex;
+  flex-direction: column;
+  }
+  
+  label {
+  margin-bottom: 8px;
+  }
+  
+  input {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  }
+  
+  .card-footer {
+  text-align: left;
+  padding: 15px;
+  }
+  
+  button {
+  display: flex;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+  
+  .ubankbtn {
+  display: flex;
+  padding: 50px;
+  justify-content: space-around;
+  }
+  
+  button:hover {
+  background-color: #45a049;
+  }
+  
+  @media (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+  }
+  
+  /* css for transaction*/
+  
+  .underline{
+  padding-left: 3rem;
+  color: #28a000;
+  font-size: 5rem
+  }
+  
+  .transactionHeader{
+  text-align: left;
+  padding-left: 3rem;
+  }
+  
+  .savings {
+  text-align: left;
+  padding-left: 3rem;
+  }
+  
+  .transact{
+  color: black;
+  }
+  
+  .balance-box {
+  margin-left: 3rem;
+  border-radius: 20px;
+  padding: 20px;
+  width: 88%;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgb(170, 170, 170);
+  }
+  
+  .balance-box p {
+  
+  text-align: left;
+  margin: 10px 0;
+  font-size: 18px;
+  }
+  
+  .balance-box h1 {
+  text-align: left;
+  margin: 10px 0;
+  font-size: 24px;
+  color: #42ff03;
+  }
+  
+  .transaction-list{
+  text-align: left;
+  margin-left: 3rem;
+  }
+  
+  /* css for footer*/
+  
+  .footerbank{
+  color:#45a049;
+  text-shadow: 0.5px 0.px 0.2px rgb(81, 80, 80);
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  
+  }
