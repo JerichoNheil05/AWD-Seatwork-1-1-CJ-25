@@ -62,23 +62,23 @@
                 <div class="card-body">
                   <form>
                     <label for="name">Account Name</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" placeholder="Jericho Nheil ">
               
                     <label for="phone">Account No.</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <input type="tel" id="phone" placeholder="202312115">
               
                     <label for="password">Amount</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="number" id="amount" placeholder="Amount">
                   </form>
                 </div>
 
                 <div class="ubankbtn">
                   <div class="card-footer-withdraw">
-                    <button>Deposit</button>
+                    <button class="transaction-button" onclick="deposit()">Deposit</button>
                   </div>
 
                   <div class="card-footer-withdraw">
-                    <button>Withdraw</button>
+                    <button class="transaction-button" onclick="deposit()">Withdraw</button>
                   </div>
                 </div>
 
@@ -99,13 +99,15 @@
 
         <div class="balance-box">
             <p>Your Balance</p>
-            <p class="balance-display">50000<span id="balance">$5000.00</span></p>
+            <h3 class="balance-display"><span id="balance">$5000.00</span></h3>
             <p>Saving A/C : xxxxx2115</p>
         </div>
 
         <div class="transaction-list">
-            <h2>Transaction History</h2>
-            <ul id="transactionList"></ul>
+            <button class="history-button">Transaction History</button>
+            <ul id="history-list" class="hidden">
+                <!-- Transaction items will be added dynamically -->
+            </ul>
         </div>
     </div>
 

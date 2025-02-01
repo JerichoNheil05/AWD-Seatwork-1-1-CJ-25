@@ -340,11 +340,16 @@ body {
   text-align: left;
   padding-left: 3rem;
   }
-  
+
+  .transact h3 {
+    text-align: left;
+    color: green;
+    font-size: x-large;
+  }
   .transact{
   color: black;
   }
-  
+
   .balance-box {
   margin-left: 3rem;
   border-radius: 20px;
@@ -373,6 +378,7 @@ body {
   .transaction-list{
   text-align: left;
   margin-left: 3rem;
+  padding-top: 3rem;
   }
   
   /* css for footer*/
