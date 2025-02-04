@@ -10,15 +10,24 @@
 
 <body>
 
-    <header class="headingBank">
+     <!-- Login Page -->
+     <div id="login-page" class="container">
+        <h1 class="title">UBank</h1>
+        <p class="user-name"></p>
+        <div class="input-group">
+            <input type="password" id="password" placeholder="Enter your password">
+            <button class="login-button" onclick="login()">Log In</button>
+        </div>
+    </div>
 
+    <div id="account-page" class="container hidden">
+    <header class="headingBank">
         <div class="navBank">
             <h1 class="ubank">UBANK.</h1>
     
             <section class="aBank">
                 <a href="Register"></a>
-                <a href="Withdraw" class=""></a>
-                <a href="./index.html" class="accountBtn">Account</a>
+                <button class="logout-button" onclick="logout()">Log Out</button>
             </section>
         </div>
         
@@ -104,7 +113,7 @@
         </div>
 
         <div class="transaction-list">
-            <button class="history-button">Transaction History</button>
+            <button class="history-button" onclick="toggleHistory()">Transaction History</button>
             <ul id="history-list" class="hidden">
                 <!-- Transaction items will be added dynamically -->
             </ul>
@@ -116,6 +125,7 @@
     <footer class="footerbank">
         <p>All rights reserve. UBank 2025.</p>
     </footer>
+</div>
 
 
 
