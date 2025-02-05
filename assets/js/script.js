@@ -1,7 +1,7 @@
 // Log in to the account
 function login() {
     const password = document.getElementById("password").value;
-    if (password === "123") {
+    if (password === "123456789") {
         document.getElementById("login-page").classList.add("hidden");
         document.getElementById("account-page").classList.remove("hidden");
         

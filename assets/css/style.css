@@ -134,7 +134,8 @@ background-color: rgb(26, 157, 8);
 /* logout */
 
 .logout-button{
-  margin-right: 2rem;
+margin-bottom: 1rem;
+margin-right: 2rem;
 display: inline-block;
 padding: 10px 20px;
 font-size: 16px;
@@ -300,7 +301,7 @@ object-fit: cover;
 .depositBank {
 justify-content: center;
 color: black;
-padding-top: 1rem;
+padding-top: 2rem;
 padding-left: 4rem;
 }
 
@@ -311,7 +312,7 @@ position: absolute;
 top: 40%;
 left: 25%;
 transform: translate(-50%, 120%);
-margin-top: 6rem;
+margin-top: 26rem;
 width: 300px;
 background-color: #ffffff;
 border-radius: 10px;
